@@ -41,6 +41,11 @@ window.addEventListener("load",function(){
     var allCheckbox =section.querySelector(".overall-checkbox")
     var delButton = section.querySelector(".del-button");
     var swapButton = section.querySelector(".swap-button");
+    var addButton = section.querySelector(".add-button");
+
+    var notices = [
+        {id:5,title:"ㅎㅎㅎㅎ",regDate:"2019-31-26",writer:"ddd",hit:0}
+    ];
 
     allCheckbox.onchange = function(){
 
@@ -50,10 +55,37 @@ window.addEventListener("load",function(){
             inputs[i].checked=allCheckbox.checked;
         
     };
+    var cnt= 0;
+    addButton.onclick = function(e){
+        cnt++;
+
+        if(cnt>=2){
+            alert("2번 추가 불가능합니다")
+            return;
+        }
+        var trNode = noticeList.querySelector("tbody tr");
+        var cloneNode = trNode.cloneNode(true);
+        var tds = cloneNode.querySelectorAll("td");//5개
+        
+
+        tds[1].textContent = notices[0].id;
+        tds[2].innerHTML = '<a href="'+notices[0].id+'">'+notices[0].title+'</a>';
+        tds[3].textContent = notices[0].regDate;
+        tds[4].textContent = notices[0].writer;
+        tds[5].textContent = notices[0].hit;
+        
+        tbody.appendChild(cloneNode)
+    }
 
     delButton.onclick = function(){
         var inputs = tbody.querySelectorAll("input[type='checkbox']:checked");
 
+        if(inputs.length==0){
+            alert("체크해주세요")
+        }
+            
+        // if(!inputs)
+        //     return alert("체크해주세요")
         // if(inputs[0].checked)
         //     inputs[0].parentElement.parentElement.remove();
 

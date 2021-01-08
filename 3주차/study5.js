@@ -17,11 +17,6 @@ window.addEventListener("load",function(){
         var cloneNode = trNode.cloneNode(true);
         var tds = cloneNode.querySelectorAll("td");//5개
         
-        // tds[0].textContent = notices[0].id;
-        // tds[1].innerHTML = '<a href="'+notices[0].id+'">'+notices[0].title+'</a>';
-        // tds[2].textContent = notices[0].regDate;
-        // tds[3].textContent = notices[0].writer;
-        // tds[4].textContent = notices[0].hit;
 
 
         tds[0].textContent = notices[0].id;
