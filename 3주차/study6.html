@@ -1,159 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <section id="ex8">
-        <h1>Ex8-노드 삽입과 바꾸기</h1>
-        <div>
-            <input type="button" class="up-button" value="위로" />
-            <input type="button" class="down-button" value="아래로" />
-        </div>
-        <table border="1" class="notice-list">
-            <thead>
-                <tr>
-                    <td>번호</td>
-                    <td>제목</td>
-                    <td>작성일</td>
-                    <td>작성자</td>
-                    <td>조회수</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td><a href="1">자바스크립트란..</a></td>
-                    <td>2019-01-25</td>
-                    <td>seongjun</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td><a href="1">자바란..</a></td>
-                    <td>2019-01-25</td>
-                    <td>seongjun</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td><a href="1">리액트란..</a></td>
-                    <td>2019-01-25</td>
-                    <td>seongjun</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td><a href="1">자바스크립트란..</a></td>
-                    <td>2019-01-25</td>
-                    <td>seongjun</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td><a href="1">자바스크립트란..</a></td>
-                    <td>2019-01-25</td>
-                    <td>seongjun</td>
-                    <td>3</td>
-                </tr>
-            </tbody>
-        </table>
+      <h1>Ex8-노드 삽입과 바꾸기</h1>
+      <div>
+        <input type="button" class="up-button" value="위로" />
+        <input type="button" class="down-button" value="아래로" />
+      </div>
+      <table border="1" class="notice-list">
+        <thead>
+          <tr>
+            <td>번호</td>
+            <td>제목</td>
+            <td>작성일</td>
+            <td>작성자</td>
+            <td>조회수</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><a href="1">자바스크립트란..</a></td>
+            <td>2019-01-25</td>
+            <td>seongjun</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td><a href="1">자바란..</a></td>
+            <td>2019-01-25</td>
+            <td>seongjun</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><a href="1">리액트란..</a></td>
+            <td>2019-01-25</td>
+            <td>seongjun</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td><a href="1">자바스크립트란..</a></td>
+            <td>2019-01-25</td>
+            <td>seongjun</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><a href="1">자바스크립트란..</a></td>
+            <td>2019-01-25</td>
+            <td>seongjun</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
     <section id="ex9">
-        <h1>Ex9-다중 노드선택 방법과 일괄 삭제</h1>
-        <div>
-            <input type="button" class="del-button" value="삭제" />
-            <input type="button" class="swap-button" value="위치바꾸기" />
-            <input type="button" class="add-button" value="추가하기" />
-        </div>
-        <table border="1" class="notice-list">
-            <thead>
-                <tr>
-                    <td><input class="overall-checkbox" type="checkbox" /></td>
-                    <td>번호</td>
-                    <td>제목</td>
-                    <td>작성일</td>
-                    <td>작성자</td>
-                    <td>조회수</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><input class="overall-checkbox" type="checkbox" /></td>
-                    <td>1</td>
-                    <td><a href="1">자바스크립트란..</a></td>
-                    <td>2019-01-25</td>
-                    <td>seongjun</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td><input class="overall-checkbox" type="checkbox" /></td>
-                    <td>1</td>
-                    <td><a href="1">자바란..</a></td>
-                    <td>2019-01-25</td>
-                    <td>seongjun</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td><input class="overall-checkbox" type="checkbox" /></td>
-                    <td>2</td>
-                    <td><a href="1">리액트란..</a></td>
-                    <td>2019-01-25</td>
-                    <td>seongjun</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td><input class="overall-checkbox" type="checkbox" /></td>
-                    <td>1</td>
-                    <td><a href="1">자바스크립트란..</a></td>
-                    <td>2019-01-25</td>
-                    <td>seongjun</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td><input class="overall-checkbox" type="checkbox" /></td>
-                    <td>3</td>
-                    <td><a href="1">자바스크립트란..</a></td>
-                    <td>2019-01-25</td>
-                    <td>seongjun</td>
-                    <td>3</td>
-                </tr>
-            </tbody>
-        </table>
+      <h1>Ex9-다중 노드선택 방법과 일괄 삭제</h1>
+      <div>
+        <input type="button" class="del-button" value="삭제" />
+        <input type="button" class="swap-button" value="위치바꾸기" />
+        <input type="button" class="add-button" value="추가하기" />
+      </div>
+      <table border="1" class="notice-list">
+        <thead>
+          <tr>
+            <td><input class="overall-checkbox" type="checkbox" /></td>
+            <td>번호</td>
+            <td>제목</td>
+            <td>작성일</td>
+            <td>작성자</td>
+            <td>조회수</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input class="overall-checkbox" type="checkbox" /></td>
+            <td>1</td>
+            <td><a href="1">자바스크립트란..</a></td>
+            <td>2019-01-25</td>
+            <td>seongjun</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td><input class="overall-checkbox" type="checkbox" /></td>
+            <td>1</td>
+            <td><a href="1">자바란..</a></td>
+            <td>2019-01-25</td>
+            <td>seongjun</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td><input class="overall-checkbox" type="checkbox" /></td>
+            <td>2</td>
+            <td><a href="1">리액트란..</a></td>
+            <td>2019-01-25</td>
+            <td>seongjun</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td><input class="overall-checkbox" type="checkbox" /></td>
+            <td>1</td>
+            <td><a href="1">자바스크립트란..</a></td>
+            <td>2019-01-25</td>
+            <td>seongjun</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td><input class="overall-checkbox" type="checkbox" /></td>
+            <td>3</td>
+            <td><a href="1">자바스크립트란..</a></td>
+            <td>2019-01-25</td>
+            <td>seongjun</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
-    <section id="ex10">
-        <h1>Ex10-클릭한 컬럼 기준으로 로우 정렬</h1>
-        <div>
-            <input type="button" class="del-button" value="삭제" />
-            <input type="button" class="swap-button" value="위치바꾸기" />
-        </div>
-        <template>
-            <tr>
-                <td></td>
-                <td><a href=""></a></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </template>
-        <table border="1" class="notice-list">
-            <thead>
-                <tr>
-                    <td><input class="overall-checkbox" type="checkbox" /></td>
-                    <td class="id">번호</td>
-                    <td class="title">제목</td>
-                    <td class="reg-date">작성일</td>
-                    <td class="writer-id">작성자</td>
-                    <td class="hit">조회수</td>
-                </tr>
-            </thead>
-            <tbody>
-                
-            </tbody>
-        </table>
-    </section>
+    <!-- <section id="ex10">
+      <h1>Ex10-클릭한 컬럼 기준으로 로우 정렬</h1>
+      <div>
+        <input type="button" class="del-button" value="삭제" />
+        <input type="button" class="swap-button" value="위치바꾸기" />
+      </div>
+      <template>
+        <tr>
+          <td></td>
+          <td><a href=""></a></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </template>
+      <table border="1" class="notice-list">
+        <thead>
+          <tr>
+            <td><input class="overall-checkbox" type="checkbox" /></td>
+            <td class="id">번호</td>
+            <td class="title">제목</td>
+            <td class="reg-date">작성일</td>
+            <td class="writer-id">작성자</td>
+            <td class="hit">조회수</td>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section> -->
     <script src="./study6.js"></script>
-</body>
+  </body>
 </html>

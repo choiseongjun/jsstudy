@@ -1,14 +1,22 @@
+const rabbit = {
+  name: "tori",
+  color: "white",
+  size: null,
+  birthDate: new Date(),
+};
+console.log(rabbit);
+json = JSON.stringify(rabbit);
 
-a=[1,2,3];
-b=[2,3,4,5];
+json = JSON.stringify(rabbit, (key, value) => {
+  console.log(`key:${key},value:${value}`);
+  // return value;
+  return key === "name" ? "seongjun" : value;
+});
 
-var c= a.concat(b);
-
-for(var i=0;i<c.length;i++){
-    for(var j=i;j<c.length;j++){
-        if(i==j)
-            continue;
-            
-    }
-
-}
+json = JSON.stringify(rabbit);
+//const obj = JSON.parse(json);
+const obj = JSON.parse(json, (key, value) => {
+  console.log(`key1:${key},value1:${value}`);
+  return value;
+});
+console.log(obj);

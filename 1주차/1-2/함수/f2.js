@@ -1,12 +1,12 @@
-function add(a,b){
-    return a+b;
+function add(a, b) {
+  return a + b;
 }
-function divide(a,b){
-    return a/b;
+function divide(a, b) {
+  return a / b;
 }
-function result(operator){
-    const res = operator(2,3);
-    return res;
+function result(operator) {
+  const res = operator(2, 3);
+  return res;
 }
 console.log(result(divide));
 
