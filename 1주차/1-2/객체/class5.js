@@ -1,25 +1,26 @@
-class Counter{
-    constructor(runEveryFiveTimes) {
-        this.counter = 0;
-        this.callback = runEveryFiveTimes;
+class Counter {
+  constructor(runEveryFiveTimes) {
+    this.counter = 0;
+    this.callback = runEveryFiveTimes;
+  }
+  increase() {
+    this.counter++;
+    console.log(this.counter);
+    if (this.counter % 5 == 0) {
+      if (this.callback) {
+        console.log("this.callback==", this.callback);
+        this.callback(this.counter);
+      }
     }
-    increase(){
-        this.counter++;
-        console.log(this.counter)
-        if(this.counter%5==0){
-            if(this.callback){
-                this.callback(this.counter)
-            }
-        }
-    }
+  }
 }
 const counter = new Counter();
-function some(num){
-    console.log(`${num}번 입력했습니다`);
+function some(num) {
+  console.log(`${num}번 입력했습니다`);
 }
 counter.increase(some);
 counter.increase(some);
 counter.increase(some);
 counter.increase(some);
 counter.increase(some);
-console.log(counter);
+counter.increase(some);

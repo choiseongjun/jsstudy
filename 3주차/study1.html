@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <input type="button" value="클릭" id="btn-print"  /><br />
+  </head>
+  <body>
+    <input type="button" value="클릭" id="btn-print" /><br />
     <span id="span1" onClick="alert('hello');">스팬입니다</span>
     <script type="text/javascript">
-        function printResult(){
-            var x,y
-            x=prompt('x 값을 입력하세요',0);
-            y=prompt('y 값을 입력하세요',0);
+      function printResult() {
+        var x, y;
+        x = prompt("x 값을 입력하세요", 0);
+        y = prompt("y 값을 입력하세요", 0);
 
-            x = parseInt(x);
-            y = parseInt(y);
+        x = parseInt(x);
+        y = parseInt(y);
 
-            // alert(x+y);
-           // span1.innerText = x+y;//스판1 안쪽에 출력
-           //btnPrint.type="text";//타입을 변경
-           var btnPrint = document.getElementById("btn-print");
-           btnPrint.value=x+y;
-        }
-        //window가 초기화되야한다
-        function init(){
-            var btnPrint = document.getElementById('btn-print');
-            console.log('on init')
-        }
-        window.onload= init;
+        // alert(x+y);
+        // span1.innerText = x+y;//스판1 안쪽에 출력
+        //btnPrint.type="text";//타입을 변경
+        let btnPrint = document.getElementById("btn-print");
+        btnPrint.value = x + y;
+      }
+      //window가 초기화되야한다
+      function init() {
+        var btnPrint = document.getElementById("btn-print");
+        console.log("on init");
+      }
+      window.onload = init;
     </script>
-</body>
+  </body>
 </html>
